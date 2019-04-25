@@ -28,7 +28,7 @@ Serverless Application Continous Deployment Workflow.
 --> First end users will develop lambda functions in Node.js or Python and push them to git repo or CodeCommit.
 --> We have two files required for this project. One is 'Sam Template' which basically defines our lambda function and API gateway and will be similar to Clouformation template with minor changes.Second one is 'Buildspec' which converts our samTemplate to cloudformation template.
 
--->After pushing these files, pipiline will be automatically triggered and these files are saved in S3 bucket and a Codebuild is triggered to convert this samtemplate file to cloudformation template. This template will have details about API gateway and Lambda. With this converted template a change set is created.
+-->After pushing these files, pipeline will be automatically triggered and these files are saved in S3 bucket and a Codebuild is triggered to convert this samtemplate file to cloudformation template. This template will have details about API gateway and Lambda. With this converted template a change set is created.
 
 --> And then there will be manual approval to check the pipeline and approve.
 
